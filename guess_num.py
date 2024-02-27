@@ -11,7 +11,6 @@ GUESS: int = random.randint(START, END)
 def check_num(num: int) -> bool:
     """
     Проверяет, входит ли переданное число в диапазон от START до END.
-
     :param num: Число для проверки.
     """
     return num in range(START, END + 1)
@@ -43,6 +42,11 @@ def game() -> str:
     return f'Вы проиграли, загаданное число {GUESS}'
 
 
-if __name__ == '__main__':
+def say_hello(name='человек'):
+    print(f'Привет, {name}!')
 
-    print(game())
+
+if __name__ == '__main__':
+    # print(game())
+    say_hello()
+    say_hello('Alex')
