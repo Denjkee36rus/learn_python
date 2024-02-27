@@ -4,12 +4,10 @@ START: int = 1
 END: int = 100
 ATTEMPT: int = 5
 
-# TODO:  1. Бот загадает число в диапазоне от START до END
 # Загаданное число
 GUESS: int = random.randint(START, END)
 
 
-# TODO: 3. Реализацию нужно декомпозировать
 def check_num(num: int) -> bool:
     """
     Проверяет, входит ли переданное число в диапазон от START до END.
@@ -24,7 +22,6 @@ def game() -> str:
     Реализация игры "Угадай число".
     """
     attempt: int = 0
-    # TODO: 2. Дается ATTEMPT попыток на угадывания
     while attempt < ATTEMPT:
         user_num: int = int(input())
 
@@ -46,4 +43,6 @@ def game() -> str:
     return f'Вы проиграли, загаданное число {GUESS}'
 
 
-print(game())
+if __name__ == '__main__':
+
+    print(game())
