@@ -30,4 +30,5 @@ def game_with_bot():
     return 'Бот: Бот проиграл не смог угадать Ваше число'
 
 
-print(game_with_bot())
+if __name__ == '__main__':
+    print(game_with_bot())
