@@ -12,7 +12,9 @@ def factorial(num: int) -> int:
             f'Функция принимает целое число, Вы передали {type(num)}'
         )
     if num < 1:
-        raise ValueError('Факториал определен только для натуральных чисел')
+        raise ValueError(
+            'Факториал определен только для натуральных чисел'
+        )
 
     prod: int = 1
     for n in range(1, num + 1):
