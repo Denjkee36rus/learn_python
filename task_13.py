@@ -1,16 +1,10 @@
-# TODO: Пожалуйста, добавьте свой код ниже с комментариями и понятными названиями переменных.
-
-names = "ЕгорКрид,КлаваКока,МаксБарских,Niletto,Artik&Asti".split(",")
-tasks = 'Niletto +1,КлаваКока -2,ЕгорКрид -3'.split(',')
-
+artists = input().split(',')
+tasks = input().split(',')
 
 for artist in tasks:
     name, delta = artist.split()
-    names.insert(names.index())
-
-
-    
-
-
-
-
+    artist_index: int = artists.index(name)
+    # artists.insert(artist_index - int(delta), artists[artist_index])
+    # del artists[artist_index]
+    artists.insert(artist_index - int(delta), artists.pop(artist_index))
+print(artists)
