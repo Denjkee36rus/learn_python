@@ -9,4 +9,4 @@ for n in nums:
 
 print(result)
 
-# 5 18 4 13
+
